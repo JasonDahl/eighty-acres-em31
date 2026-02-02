@@ -1,0 +1,40 @@
+name: GeoAI
+channels:
+  - conda-forge
+  - defaults
+channel_priority: strict
+dependencies:
+  # Core Python
+  - python=3.11
+
+  # Scientific stack
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+
+  # Geospatial stack (conda-forge builds handle GDAL/PROJ safely)
+  - geopandas
+  - shapely
+  - pyproj
+  - fiona
+  - gdal
+
+  # Geostatistics
+  - pykrige
+  - scikit-gstat
+
+  # Clustering (optional but available)
+  - hdbscan
+
+  # Notebook + utilities
+  - jupyterlab
+  - ipykernel
+  - tqdm
+
+  # Pip fallback (kept minimal)
+  - pip
+  - pip:
+      # (intentionally empty — add only if absolutely required)

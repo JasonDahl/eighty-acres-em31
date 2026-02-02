@@ -1,0 +1,66 @@
+# ---- Python / Conda ----
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Conda environments (never commit)
+
+.env
+.envrc
+conda-env/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# ---- Data & Outputs ----
+
+# Raw / derived data (keep repo clean; document provenance instead)
+
+data/*.csv
+data/*.dat
+data/*.DAT
+data/*.txt
+
+# Figures and exports (regenerated)
+
+figures/
+outputs/
+results/
+
+# ---- OS / Editor ----
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- Logs ----
+
+*.log
+
+# ---- Temporary files ----
+
+*.tmp
+*.bak
+*.swp
+
+# ---- Geo / Scientific ----
+
+*.aux
+*.qix
+*.cpg
+*.prj
+*.shx
+*.dbf
+
+# ---- Environment locks ----
+
+*.lock
+
+# ---- Optional: large binaries ----
+
+*.zip
+*.tar
+*.tar.gz
